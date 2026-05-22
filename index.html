@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Mera tahs: Tell the browser about our page -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cognifyz Internship Project | Data Meets Intelligence</title>
+
+        <style>
+            /* CSS Reset + Base */
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            body{
+                font-family: 'Georgia', serif;
+                background-color: #f4f6f9;
+                color: #1a1a2e;
+                line-height: 1.7;
+            }
+
+            /* -- Header ----------------------- */
+            header{
+                background-color: #1a1a2e;
+                color: #ffffff;
+                padding: 2rem;
+                text-align: center;
+                border-bottom: 4px solid #e94560;
+            }
+
+            header h1{
+                font-size: 2.2rem;
+                letter-spacing: 1px;
+            }
+
+            /* --- Navigation ----------------*/
+            nav{
+                background-color: #16213e;
+                display: flex;
+                justify-content: center;
+                gap: 2rem;
+                padding: 0.9rem 1rem;
+            }
+            nav a {
+                color: #e0e0ff;
+                text-decoration: none;
+                font-size: 0.95rem;
+                letter-spacing: 0.5px;
+                transition: color 0.3s;
+            }
+
+            nav a:hover {
+                color: #e94560;
+            }
+
+            /* ----Main Content ------------------*/
+            main{
+                max-width: 900px;
+                margin: 2.5rem auto;
+                padding: 0 1.5rem;
+            }
+
+            /* --- Hero Section ------------------ */
+            .hero{
+                text-align: center;
+                padding: 2.5rem 2rem;
+                background: #ffffff;
+                border-radius: 12px;
+                border: 1px solid #dde2ef;
+                margin-bottom: 2.5rem;    
+            }
+
+            .hero h2{
+                font-size: 1.8rem;
+                color: #1a1a2e;
+                margin-bottom: 1rem;
+            }
+
+            .hero img{
+                width: 100%;
+                max-width: 600px;
+                border-radius: 10px;
+                border: 2px solid #dde2ef;
+                margin-top: 1rem;
+            }
+
+            /* ---- About Section ------------------ */
+            .about {
+                background: #ffffff;
+                border-radius: 12px;
+                border: 1px solid #dde2ef;
+                padding: 2rem;
+                margin-bottom: 2.5rem;
+            }
+
+            .about h2 {
+                font-size: 1.5rem;
+                color: #e94560;
+                margin-bottom: 1rem;
+                border-left: 4px solid #e94560;
+                padding-left: 0.75rem;
+            }
+
+            .about p {
+                color: #333355;
+                margin-bottom: 0.9rem;
+            }
+
+            /* -----Skills Section ------------------ */
+            .skills {
+                background: #ffffff;
+                border-radius: 12px;
+                border: 1px solid #dde2ef;
+                padding: 2rem;
+                margin-bottom: 2.5rem;
+            }
+
+            .skills h2 {
+                font-size: 1.5rem;
+                color: #e94560;
+                margin-bottom: 1.2rem;
+                border-left: 4px solid #e94560;
+                padding-left: 0.75rem;
+            }
+
+            .skills ul {
+                list-style: none;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 0.75rem;
+            }
+
+            .skills ul li{
+                background: #1a1a2e;
+                color: #aaaacc;
+                padding: 0.5rem 1.1rem;
+                border-radius: 20px;
+                font-size: 0.9rem;
+            }
+
+            /* ---- Footer ------------------ */
+            footer{
+                background-color: #1a1a2e;
+                color: #aaaacc;
+                text-align: center;
+                padding: 1.5rem;
+                font-size: 0.9rem;
+                margin-top: 2rem;
+            }
+
+            footer span{
+                color: #e94560;
+            }
+    
+        </style>
+    </head>
+
+    <body>
+
+
+        <! ---- hEADER ----- ->
+
+        <header>
+            <h1> Cognifyz Internship Project</h1>
+            <p>Where Data meets Intelligence - Level 1: Beginner</p>
+        </header>
+
+
+        <nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <main>
+            <section class="hero">
+                <h2>Welcome to My Project</h2>
+                <p>
+                    This page is the starting point of an interactive website built during my internship at <strong>Cognifyz Tecnologies</strong>. I'll be learning HTML, CSS, Javascript, APIs, and control using Github.
+                </p>
+
+                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=900&q=80"
+                     alt="A laptop with code on the screen represnting webdevelopment" />
+
+
+            </section>
+
+            <section class="about" id="about">
+                <h2>About this Project</h2>
+                <p>
+                    This is Task 1 of the Cognifyz Level 1 project, I will enhamce this page with CSS styling, Javascript interactivity, API integrations, and deploy it using GitHub Pages.
+                </p>
+                <p>
+                    Each task builds on the previous, turning this simple HTML file into a fully responsive, dynamic website.
+                </p>
+            </section>
+
+            <section class="skills" id="skills">
+                <h2>Technologies I'm Learning</h2>
+                <ul>
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>JavaScript</li>
+                    <li>Sass / SCSS</li>
+                    <li>Rest APIs</li>
+                    <li>Git and GitHub</li>
+                    <li>Responsive Design</li>
+                </ul>
+            </section>
+        </main>
+
+        <footer id="content">
+            <p>Built with ❤️ during my Internship at Cognifyz Technologies</p>
+        </footer>
+
+        
+
+    </body>
+</html>
