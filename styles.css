@@ -18,4 +18,71 @@ p{
     p{
         font-size: 14px;
     }
+    
+}
+
+/* ── Form Section ────────────────────── */
+#contact-form {
+  background: #ffffff;
+  border-radius: 12px;
+  border: 1px solid #dde2ef;
+  padding: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+#contact-form h2 {
+  color: #e94560;
+  border-left: 4px solid #e94560;
+  padding-left: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+#myForm {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+label {
+  font-weight: bold;
+  color: #1a1a2e;
+  font-size: 0.95rem;
+}
+
+input, textarea {
+  padding: 0.75rem;
+  border: 1px solid #dde2ef;
+  border-radius: 8px;
+  font-size: 1rem;
+  width: 100%;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border-color: #e94560;
+}
+
+textarea {
+  height: 120px;
+  resize: vertical;
+}
+
+#myForm button {
+  background-color: #1a1a2e;
+  color: white;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+#myForm button:hover {
+  background-color: #e94560;
+}
+
+#form-feedback {
+  margin-top: 1rem;
+  font-weight: bold;
+  font-size: 0.95rem;
 }
