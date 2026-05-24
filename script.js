@@ -18,7 +18,8 @@ fetchBtn.addEventListener("click", function() {
       container.innerHTML = "";
       data.posts.forEach(function(post) {
         let div = document.createElement("div");
-        div.innerHTML = "<h3>" + post.title + "</h3>" + "<p>" + post.body + "</p>" + "<p>👍 " + post.reactions.likes + " likes</p>";
+        div.style.cssText = "background: white; border-radius: 10px; padding: 1.2rem; margin-bottom: 1rem; border-left: 4px solid #e94560; box-shadow: 0 2px 8px rgba(0,0,0,0.08);";
+div.innerHTML = "<h3 style='color:#e94560; font-size:1rem; margin-bottom:0.5rem;'>" + post.title + "</h3>" + "<p style='color:#444; font-size:0.9rem;'>" + post.body + "</p>" + "<p style='color:#1a1a2e; font-weight:600; margin-top:0.5rem;'>👍 " + post.reactions.likes + " likes</p>";
         container.appendChild(div);
       });
     });

@@ -5,19 +5,23 @@ $bg-color: #f4f6f9;
 $white: #ffffff;
 $border-color: #dde2ef;
 $font-size-base: 16px;
+$font-body: 'Poppins', sans-serif;
+$font-heading: 'Playfair Display', serif;
 $font-size-heading: 1.5rem;
 
 // ── Base Styles ───────────────────────
 body {
+  font-family: $font-body;
   font-size: $font-size-base;
   background-color: $bg-color;
   color: $primary-color;
-
-  // Nested heading style
   h1, h2 {
+    font-family: $font-heading;
     color: $accent-color;
   }
 }
+  
+
 
 // ── Navbar ────────────────────────────
 nav {
@@ -73,10 +77,19 @@ button {
 
 // ── Header ────────────────────────────
 header {
-  background-color: $primary-color;
+  background: linear-gradient(135deg, #1a1a2e, #e94560) !important;
   color: $white;
-  padding: 1rem 2rem;
-  border-bottom: 4px solid $accent-color;
+  padding: 4rem 2rem;
+  text-align: center;
+
+  h1 {
+    font-size: 3rem;
+    color: $white !important;
+  }
+
+  p {
+    color: #f0f0f0;
+  }
 }
 
 // ── Footer ────────────────────────────
