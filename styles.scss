@@ -1,0 +1,95 @@
+// ── Variables ────────────────────────
+$primary-color: #1a1a2e;
+$accent-color: #e94560;
+$bg-color: #f4f6f9;
+$white: #ffffff;
+$border-color: #dde2ef;
+$font-size-base: 16px;
+$font-size-heading: 1.5rem;
+
+// ── Base Styles ───────────────────────
+body {
+  font-size: $font-size-base;
+  background-color: $bg-color;
+  color: $primary-color;
+
+  // Nested heading style
+  h1, h2 {
+    color: $accent-color;
+  }
+}
+
+// ── Navbar ────────────────────────────
+nav {
+  background-color: $primary-color;
+
+  a {
+    color: $white;
+
+    &:hover {
+      color: $accent-color;
+    }
+  }
+}
+
+// ── Cards ─────────────────────────────
+.card {
+  background: $white;
+  border: 1px solid $border-color;
+
+  h2 {
+    font-size: $font-size-heading;
+    border-left: 4px solid $accent-color;
+    padding-left: 0.75rem;
+  }
+}
+
+// ── Button ────────────────────────────
+button {
+  background-color: $primary-color;
+  color: $white;
+
+  &:hover {
+    background-color: $accent-color;
+  }
+}
+
+// ── Skills Badges ─────────────────────
+.skills ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  padding: 0;
+
+  li {
+    background: $primary-color;
+    color: $white;
+    padding: 0.5rem 1.1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+  }
+}
+
+// ── Header ────────────────────────────
+header {
+  background-color: $primary-color;
+  color: $white;
+  padding: 1rem 2rem;
+  border-bottom: 4px solid $accent-color;
+}
+
+// ── Footer ────────────────────────────
+footer {
+  background-color: $primary-color;
+  color: #aaaacc;
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: 2rem;
+}
+
+// ── Image ─────────────────────────────
+img {
+  width: 100%;
+  border-radius: 10px;
+}

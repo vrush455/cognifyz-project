@@ -1,88 +1,73 @@
 body {
-    font-size: 16px;
-    padding: 20 px;
+  font-size: 16px;
+  background-color: #f4f6f9;
+  color: #1a1a2e;
 }
-
-h1{
-    font-size: 32px;
-}
-
-p{
-    font-size: 16px;
-}
-@media (max-width: 600px) {
-    h1{
-        font-size: 22px;
-    }
-
-    p{
-        font-size: 14px;
-    }
-    
-}
-
-/* ── Form Section ────────────────────── */
-#contact-form {
-  background: #ffffff;
-  border-radius: 12px;
-  border: 1px solid #dde2ef;
-  padding: 2rem;
-  margin-bottom: 2.5rem;
-}
-
-#contact-form h2 {
+body h1, body h2 {
   color: #e94560;
+}
+
+nav {
+  background-color: #1a1a2e;
+}
+nav a {
+  color: #ffffff;
+}
+nav a:hover {
+  color: #e94560;
+}
+
+.card {
+  background: #ffffff;
+  border: 1px solid #dde2ef;
+}
+.card h2 {
+  font-size: 1.5rem;
   border-left: 4px solid #e94560;
   padding-left: 0.75rem;
-  margin-bottom: 1.5rem;
 }
 
-#myForm {
-  display: flex;
-  flex-direction: column;
-  gap: 0.8rem;
-}
-
-label {
-  font-weight: bold;
-  color: #1a1a2e;
-  font-size: 0.95rem;
-}
-
-input, textarea {
-  padding: 0.75rem;
-  border: 1px solid #dde2ef;
-  border-radius: 8px;
-  font-size: 1rem;
-  width: 100%;
-}
-
-input:focus, textarea:focus {
-  outline: none;
-  border-color: #e94560;
-}
-
-textarea {
-  height: 120px;
-  resize: vertical;
-}
-
-#myForm button {
+button {
   background-color: #1a1a2e;
-  color: white;
-  padding: 0.75rem;
-  border: none;
-  border-radius: 8px;
-  font-size: 1rem;
-  cursor: pointer;
+  color: #ffffff;
 }
-
-#myForm button:hover {
+button:hover {
   background-color: #e94560;
 }
 
-#form-feedback {
-  margin-top: 1rem;
-  font-weight: bold;
-  font-size: 0.95rem;
+.skills ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  padding: 0;
 }
+.skills ul li {
+  background: #1a1a2e;
+  color: #ffffff;
+  padding: 0.5rem 1.1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+
+header {
+  background-color: #1a1a2e;
+  color: #ffffff;
+  padding: 1rem 2rem;
+  border-bottom: 4px solid #e94560;
+}
+
+footer {
+  background-color: #1a1a2e;
+  color: #aaaacc;
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: 2rem;
+}
+
+img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/*# sourceMappingURL=styles.css.map */
