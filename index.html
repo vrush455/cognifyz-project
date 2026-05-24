@@ -156,6 +156,10 @@
     
         </style>
     </head>
+    <link 
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" 
+  rel="stylesheet" 
+/>
     <link rel="stylesheet" href="styles.css" />
 
     
@@ -171,27 +175,38 @@
         </header>
 
 
-        <nav>
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#contact">Contact</a>
-        </nav>
+       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="#">Cognifyz Project</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact-form">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
-        <main>
-            <button id="colorBtn">Change Background Color</button>
-            <section class="hero">
+        <main class="container my-4">
+            
+            <section class="hero card p-4 text-center mb-4">
+
                 <h2>Welcome to My Project</h2>
                 <p>
                     This page is the starting point of an interactive website built during my internship at <strong>Cognifyz Tecnologies</strong>. I'll be learning HTML, CSS, Javascript, APIs, and control using Github.
                 </p>
 
                 <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=900&q=80"
-                     alt="A laptop with code on the screen represnting webdevelopment" />
-
+                     alt="A laptop with code on the screen represnting webdevelopment"  class="img-fluid rounded mt-3"/>
+            <button id="colorBtn">Change Background Color</button>
 
             </section>
 
-            <section class="about" id="about">
+           <section class="about card p-4 mb-4" id="about">
                 <h2>About this Project</h2>
                 <p>
                     This is Task 1 of the Cognifyz Level 1 project, I will enhamce this page with CSS styling, Javascript interactivity, API integrations, and deploy it using GitHub Pages.
@@ -201,7 +216,7 @@
                 </p>
             </section>
 
-            <section class="skills" id="skills">
+            <section class="skills card p-4 mb-4" id="skills">
                 <h2>Technologies I'm Learning</h2>
                 <ul>
                     <li>HTML5</li>
@@ -214,13 +229,13 @@
                 </ul>
             </section>
 
-            <section id="api-section">
+            <section class="card p-4 mb-4" id="api-section">
                 <h2> Posts from API </h2>
                 <button id="fetchBtn">Load Posts</button>
                 <div id="posts-container"></div>
             </section>
 
-            <section id="contact-form">
+            <section class="card p-4 mb-4" id="contact-form">
                 <h2>Contact Me</h2>
                 <form id="myForm">
 
@@ -244,7 +259,7 @@
             <p>Built with ❤️ during my Internship at Cognifyz Technologies</p>
         </footer>
 
-        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src = "script.js"></script>
 </body>
 </html>
